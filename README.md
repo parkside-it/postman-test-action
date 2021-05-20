@@ -18,6 +18,7 @@
   with:
     collection: collection.json
     reporters: cli
+    envVars: {}
 
 - name: Output summary to console
   run: echo ${{ steps.run-newman.outputs.summary }}
@@ -94,6 +95,7 @@ This action is able to set all parameters listed in the [Newman API Reference do
 - `sslClientCert` (optional) - Path to public client certificate
 - `sslClientKey` (optional) - Path to secret client key file
 - `sslClientPassphrase` (optional) - Secret client key passphrase
+- `envVars` (optional) - Possibility to override environment variabless
 
 ### Outputs
 
